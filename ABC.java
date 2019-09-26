@@ -1,3 +1,10 @@
+/*
+*
+*@author JohnRandelin
+*
+* Link to problem: https://kau.kattis.com/problems/abc
+*/
+
 import java.util.Scanner;
 
 public class ABC {
