@@ -8,7 +8,7 @@
 import java.util.Scanner;
 
 public class ABC {
-    
+ 
     public static void main(String[] args) {
         int[] list = {0, 0 ,0};
         char[] order = {0 ,0 ,0};
@@ -79,7 +79,7 @@ String s = ob.nextLine();
     }
 
     if(order[0] == 'B' && order[1]=='A')
-    { 
+    {
         System.out.print(list[1]+" ");
         System.out.print(list[0]+" ");
         System.out.print(list[2]);
