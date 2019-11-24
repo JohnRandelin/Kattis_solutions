@@ -1,0 +1,58 @@
+/**
+ Solution to the Kattis Problem Above Average
+ https://kau.kattis.com/problems/aboveaverage
+*/
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    
+    int C;
+    int N;
+    int sum=0;
+    int i;
+    float counter;
+    float mean;
+    //The number of test cases
+    scanf("%d",&C);
+    //Array with the results
+   float a[C];
+    
+    for(i=0;i<C;i++){
+        sum=0;
+        mean=0.00;
+        counter = 0;
+        scanf("%d",&N);
+        int array[N];
+        
+        for(int a=0; a<N;a++){
+            
+            scanf("%d",&array[a]);
+            sum=array[a]+sum;
+        }
+ 
+        //Mean
+        mean = sum/N;
+
+        for(int b=0;b<N;b++)
+        {
+            if(array[b]>mean){
+                counter++;
+            }
+        }
+        a[i] = (counter/N);
+  
+    }
+    
+    for(i=0;i<C;i++){
+        
+        printf("%.3f%%\n",a[i]*100);
+    }
+    
+
+   
+    
+    return 0;
+}
